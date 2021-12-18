@@ -1,0 +1,47 @@
+{
+    "authors": [
+        {
+            "name": "Aidan Casey",
+            "email": "aidan.casey@anteris.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/collections": "^8.0",
+        "php-http/client-common": "^2.0",
+        "php-http/discovery": "^1.0",
+        "php-http/httplug": "^2.0",
+        "php-http/message-factory": "^1.0",
+        "psr/cache": "^1.0",
+        "psr/http-client-implementation": "^1.0",
+        "psr/http-message": "^1.0",
+        "symplify/monorepo-builder": "^10.0"
+    },
+    "require-dev": {
+        "cache/array-adapter": "^1.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "guzzlehttp/psr7": "^2.0",
+        "larapack/dd": "^1.0",
+        "php-http/mock-client": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutotaskPHP\\Connection\\": [
+                "AutotaskPHP/Connection/src/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AutotaskPHP\\Tests\\Connection\\": "AutotaskPHP/Connection/tests/"
+        }
+    },
+    "replace": {
+        "autotaskphp/connection": "self.version"
+    }
+}
